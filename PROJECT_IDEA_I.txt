@@ -1,0 +1,196 @@
+# FACIAL_RECOGINITION_PROJECT
+
+Facial Recognition System
+
+📌 Project Overview
+
+The Facial Recognition System is a Python-based application that identifies a person's face using a webcam. It compares the faces captured by the webcam with previously stored images and displays the name of the matched person on the screen. If the face is not found in the database, it displays "Unknown".
+
+This project demonstrates the practical use of Computer Vision and Artificial Intelligence (AI) for recognizing human faces in real time.
+
+---
+
+🎯 Objective
+
+The objective of this project is to build a simple facial recognition system that can:
+
+- Detect human faces from a live webcam.
+- Compare detected faces with stored images.
+- Identify known persons.
+- Display "Unknown" for unregistered faces.
+
+---
+
+✨ Features
+
+- Real-time face detection.
+- Real-time face recognition.
+- Supports multiple registered users.
+- Labels recognized faces with their names.
+- Displays "Unknown" for faces not present in the database.
+- Easy to understand and beginner-friendly Python code.
+
+---
+
+🛠 Technologies Used
+
+- Python
+- OpenCV
+- face_recognition Library
+- NumPy
+
+---
+
+📁 Project Structure
+
+Facial-Recognition-System/
+
+├── main.py
+
+├── face_recognition_system.py
+
+├── known_faces/
+
+│   ├── person1.jpg
+
+│   ├── person2.jpg
+
+│   └── ...
+
+├── requirements.txt
+
+├── README.md
+
+└── .gitignore
+
+---
+
+⚙️ How the Project Works
+
+Step 1: Store Known Faces
+
+Create a folder named known_faces and place clear images of the people you want the system to recognize. The filename becomes the person's name.
+
+Example:
+
+- Rahul.jpg
+- Aisha.jpg
+- John.jpg
+
+---
+
+Step 2: Load Images
+
+The program scans the known_faces folder and loads each image into memory.
+
+---
+
+Step 3: Generate Face Encodings
+
+Each face is converted into a unique numerical representation called a face encoding. These encodings act like digital fingerprints for each face.
+
+---
+
+Step 4: Start the Webcam
+
+The webcam opens and continuously captures video frames.
+
+---
+
+Step 5: Detect Faces
+
+For every frame, the program detects all visible faces.
+
+---
+
+Step 6: Compare Faces
+
+Each detected face is compared with the stored face encodings.
+
+- If a match is found, the person's name is displayed.
+- If no match is found, "Unknown" is displayed.
+
+---
+
+Step 7: Display Results
+
+A green rectangle is drawn around every detected face along with the person's name.
+
+---
+
+Step 8: Exit
+
+Press Q on the keyboard to close the application.
+
+---
+
+💻 Installation
+
+Install the required libraries:
+
+pip install -r requirements.txt
+
+---
+
+▶️ Run the Project
+
+python main.py
+
+---
+
+📸 Example Output
+
+When a registered person appears in front of the webcam:
+
+[ Green Rectangle ]
+
+Name: Rahul
+
+When an unregistered person appears:
+
+[ Green Rectangle ]
+
+Name: Unknown
+
+---
+
+📚 Concepts Used
+
+- Computer Vision
+- Face Detection
+- Face Recognition
+- Image Processing
+- NumPy Arrays
+- Python File Handling
+- OpenCV Video Capture
+
+---
+
+🎓 Learning Outcomes
+
+By completing this project, you will learn:
+
+- How facial recognition works.
+- How to use OpenCV with Python.
+- How face encodings are generated and compared.
+- How to work with image processing libraries.
+- How to access and process webcam video.
+- How to organize a Python project for GitHub.
+
+---
+
+🚀 Future Improvements
+
+- Face recognition attendance system.
+- Save attendance records in CSV format.
+- Face recognition using a database.
+- Improve recognition accuracy.
+- Add a graphical user interface (GUI).
+- Support for video file recognition.
+- Email or notification when an unknown face is detected.
+
+---
+
+📄 License
+
+This project is created for educational and learning purposes. Feel free to modify and improve it.
